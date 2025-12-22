@@ -1,14 +1,8 @@
 #include "Contact.hpp"
 
-Contact::Contact()
-{
-	std::cout << "Contact construtor called: " << this << std::endl;
-}
+Contact::Contact(){}
 
-Contact::~Contact()
-{
-	std::cout << "Contact destructor called: " << this << std::endl;
-}
+Contact::~Contact(){}
 
 void Contact::add()
 {
@@ -65,7 +59,7 @@ static std::string formatForColumn(std::string str)
 		return (str);
 }
 
-std::string Contact::formatField(O_flag flag)
+std::string Contact::getFormattedValue(O_flag flag)
 {
 	switch (flag)
 	{
