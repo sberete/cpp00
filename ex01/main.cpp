@@ -8,7 +8,7 @@ int main()
 
     for(;;)
     {
-        std::cout << "add, search and exit" << std::endl;
+        std::cout << "Available commands: add | search | exit" << std::endl;
         std::cin >> str;
         if (str.compare("add") == 0)
             pb.addContactintoPhoneBook(i++);

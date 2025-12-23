@@ -6,31 +6,31 @@ Contact::~Contact(){}
 
 void Contact::add()
 {
-	std::cout << "First name" << std::endl;
-	std::cin >> firstname;
-	std::cout << "Last name" << std::endl;
-	std::cin >> lastname;
-	std::cout << "Nickname" << std::endl;
-	std::cin >> nickname;
-	std::cout << "Phone number" << std::endl;
-	std::cin >> phonenumber;
-	std::cout << "Darkest secret" << std::endl;
-	std::cin >> darkestsecret;
+    std::cout << "Enter first name: ";
+    std::cin >> _firstname;
+    std::cout << "Enter last name: ";
+    std::cin >> _lastname;
+    std::cout << "Enter nickname: ";
+    std::cin >> _nickname;
+    std::cout << "Enter phone number: ";
+    std::cin >> _phonenumber;
+    std::cout << "Enter darkest secret: ";
+    std::cin >> _darkestsecret;
 }
 
 std::string Contact::getFirstname() const
 {
-	return (this->firstname);
+	return (this->_firstname);
 }
 
 std::string Contact::getLastname() const
 {
-	return (this->lastname);
+	return (this->_lastname);
 }
 
 std::string Contact::getNickname() const
 {
-	return (this->nickname);
+	return (this->_nickname);
 }
 
 static std::string trunc_string(std::string str)
