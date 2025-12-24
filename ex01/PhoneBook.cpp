@@ -27,8 +27,8 @@ void PhoneBook::search()
             std::cout << "Invalid input. Please enter a valid index or 'q' to quit." << std::endl;
             continue;
         }
-        std::cout << "Index" << std::setw(15) << "Firstname" << std::setw(15) << "Lastname" << std::setw(15) << "Nickname" << std::setw(20) << "Phone Number" << std::setw(20) << "Darkest Secret" << std::endl;
-        std::cout << std::setw(5) << x << std::setw(15) << _contact[x - 1].getFirstname() << std::setw(15) << _contact[x - 1].getLastname() << std::setw(15) << _contact[x - 1].getNickname() << std::setw(20) << _contact[x - 1].getPhoneNumber() << std::setw(20) << _contact[x - 1].getDarkestSecret() << std::endl;
+        std::cout << std::right << std::setw(5) << "Index" << " | " << std::setw(15) << "Firstname" << " | " << std::setw(15) << "Lastname" << " | " << std::setw(15) << "Nickname" << " | " << std::setw(20) << "Phone Number" << " | " << std::setw(20) << "Darkest Secret" << std::endl;
+        std::cout << std::right << std::setw(5) << x << " | " << std::setw(15) << _contact[x - 1].getFirstname() << " | " << std::setw(15) << _contact[x - 1].getLastname() << " | " << std::setw(15) << _contact[x - 1].getNickname() << " | " << std::setw(20) << _contact[x - 1].getPhoneNumber() << " | " << std::setw(20) << _contact[x - 1].getDarkestSecret() << std::endl;
         std::cout << "Want to search another contact, or quit? (Enter index or 'q' to quit):" << std::endl;
     }
 }

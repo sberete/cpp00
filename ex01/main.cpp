@@ -10,6 +10,11 @@ int main()
     {
         std::cout << "Available commands: add | search | exit" << std::endl;
         std::cin >> str;
+        if (std::cin.eof()) 
+        {
+            std::cout << "End of file detected. Program terminated." << std::endl;
+            break;
+        }
         if (str.compare("add") == 0)
             pb.addContactintoPhoneBook(i++);
         if (str.compare("search") == 0)
