@@ -14,7 +14,9 @@ class Contact
         };
         std::string getFirstname() const;
         std::string getLastname() const;
-        std::string getNickname() const;
+        std::string getNickname() const;        
+        std::string getPhoneNumber() const;
+        std::string getDarkestSecret() const;
         std::string getFormattedValue(O_flag);
         void add();
         Contact();

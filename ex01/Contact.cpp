@@ -33,6 +33,16 @@ std::string Contact::getNickname() const
 	return (this->_nickname);
 }
 
+std::string Contact::getPhoneNumber() const
+{
+	return (this->_phonenumber);
+}
+
+std::string Contact::getDarkestSecret() const
+{
+	return (this->_darkestsecret);
+}
+
 static std::string trunc_string(std::string str)
 {
 	std::string buffer = str;
